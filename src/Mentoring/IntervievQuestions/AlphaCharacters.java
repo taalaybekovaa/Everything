@@ -14,7 +14,6 @@ public class AlphaCharacters {
             char ch=given.charAt(i);
             if(Character.isAlphabetic(ch) && !Character.isDigit(ch)) {
                 onlyAlphabets += ch;
-                System.out.println(ch);
             }else if(!Character.isAlphabetic(ch) && Character.isDigit(ch)){
                 onlyDigits+=ch;
             }else{

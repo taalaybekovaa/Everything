@@ -10,5 +10,21 @@ public class Store {
         Rose rose1 = new Rose("Pink");
         System.out.println(rose1);
 
+
+        Tulip tulip = new Tulip();
+        System.out.println(tulip.color);
+
+        tulip.color="Green";
+        System.out.println(tulip.color);
+
+        Flower flower1= new Flower();
+        System.out.println(flower1.color);
+
+        Tulip tulip1= new Tulip();
+        System.out.println(tulip1.color);
+
+        Tulip tulip3= new Tulip("Tulip", "White", 4.5);
+
+
     }
 }

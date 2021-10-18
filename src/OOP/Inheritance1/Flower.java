@@ -13,7 +13,7 @@ public class Flower {
         this.height=newHeight;
 
     }
-
+public Flower(){}
 
 
 

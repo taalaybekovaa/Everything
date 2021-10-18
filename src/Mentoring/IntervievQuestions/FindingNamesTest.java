@@ -1,12 +1,8 @@
 package Mentoring.IntervievQuestions;
 
-import java.util.Arrays;
-
-public class FindingNames {
-
+public class FindingNamesTest {
     public static void main(String[] args) {
 
-        //How many times you find these words in the given String
 
         String[] name = {"rights", "apply"};
 
@@ -18,20 +14,20 @@ public class FindingNames {
                 "\n" +
                 "Authors may portion out different rights they hold to different parties, at different times, and for different purposes or uses, such as the right to adapt a plot into a film, but only with different character names, because the characters have already been optioned by another company for a television series or a video game. An author may also not have rights when working under contract that they would otherwise have, such as when creating a work for hire (e.g., hired to write a city tour guide by a municipal government that totally owns the copyright to the finished work), or when writing material using intellectual property owned by others (such as when writing a novel or screenplay that is a new installment in an already established media franchise).";
 
-
         words = words.replace(",", "");
+        String [] separatedWords=words.split(" ");
 
-        String[] seperatedWords = words.split(" ");
+        for (int i = 0; i < name.length ; i++) {
+            int counter=0;
 
-        for (int i = 0; i < name.length; i++) {
-            int counter = 0;
-            for (int k = 0; k < seperatedWords.length; k++) {
-                if (name[i].equals(seperatedWords[k])) {
-                    counter++;
+            for (int j = 0; j <separatedWords.length ; j++) {
+              if(name[i].equals(separatedWords[j])){
+                  counter++;
+              }
+
                 }
+            System.out.println(name[i]+" is "+counter+"times in the given String");
             }
-            System.out.println(name[i] + "is " + counter + "times in the given String");
         }
-    }
-}
 
+    }
