@@ -17,7 +17,7 @@ public interface Shape {
         System.out.println("I am info about shape Interface");
     }
 
-    private void info2() {
+    static void info2() {
         System.out.println("");
 
     }
